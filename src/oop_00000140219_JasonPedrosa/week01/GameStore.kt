@@ -3,13 +3,15 @@ package oop_00000140219_JasonPedrosa.week01
 fun main() {
     val gameTitle = "Super Mario"
     val price = 500000
+    val userNote: String? = null
 
     val discount = calculateDiscount(price)
     val finalPrice = price - discount
 
     printReceipt(
         title = gameTitle,
-        finalPrice = finalPrice
+        finalPrice = finalPrice,
+        note = userNote
     )
 }
 
@@ -19,8 +21,9 @@ fun calculateDiscount(price: Int) =
     else if (price <= 500000) price * 20 / 100
     else price * 30 / 100
 
-fun printReceipt(title: String, finalPrice: Int) {
+fun printReceipt(title: String, finalPrice: Int, note: String?) {
     println("=== SteamKW Receipt ===")
     println("Game Title : $title")
     println("Final Price: Rp$finalPrice")
+    println("Note       : ${note ?: "Tidak ada catatan"}")
 }
