@@ -12,7 +12,6 @@ fun main(){
 
     print("Masukkan NIM (wajib 5 karakter):")
     val nim = scanner.next()
-
     scanner.nextLine()
 
     if(nim.length != 5){
