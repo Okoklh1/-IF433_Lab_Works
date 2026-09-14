@@ -1,12 +1,11 @@
 package oop_00000140219_JasonPedrosa.week03
 
 fun main() {
-    val senjata = weapon("Pistol")
+    val pemain = player("Budi")
 
-    senjata.damage = -50
-    println("Damage: ${senjata.damage}")
-    senjata.damage = 9999
-    println("Damage: ${senjata.damage}")
+    pemain.addXp(50)
+    println("Level: ${pemain.level}")
 
-    println("Tier: ${senjata.tier}")
+    pemain.addXp(60)
+    println("Level: ${pemain.level}")
 }
