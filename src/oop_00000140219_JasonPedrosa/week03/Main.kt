@@ -1,6 +1,6 @@
 package oop_00000140219_JasonPedrosa.week03
 
-fun main(){
+fun main() {
     val e = employee("Budi")
 
     e.salary = -1000
