@@ -36,14 +36,21 @@ fun main() {
 
     println("\n=== Tugas Mandiri 2 ===")
 
-    val eWallet = eWallet("Rizky", 50000.0)
-    val creditCard = creditCard("Rizky", 100000.0)
+    val eWallet = eWallet("Jason", 50000.0)
+    val creditCard = creditCard("Jason", 100000.0)
 
     val paymentMethods: List<paymentMethod> = listOf(eWallet, creditCard)
 
     for (paymentMethod in paymentMethods) {
         println("Account: ${paymentMethod.accountName}")
+
         paymentMethod.processPayment(75000.0)
+
+        if (paymentMethod is eWallet) {
+            paymentMethod.topUp(50000.0)
+            paymentMethod.processPayment(75000.0)
+        }
+
         println("--------------------------")
     }
 }
