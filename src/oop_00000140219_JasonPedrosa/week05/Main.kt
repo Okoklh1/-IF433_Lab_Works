@@ -6,7 +6,7 @@ fun main() {
 
     val daftarPegawai: List<pegawai> = listOf(dosen1, admin1)
 
-    println("=== AKTIVITAS PEGAWAI===")
+    println("=== AKTIVITAS PEGAWAI ===")
     for (pegawai in daftarPegawai) {
         pegawai.bekerja()
 
@@ -23,4 +23,12 @@ fun main() {
         }
         println("--------------------------")
     }
+
+    println("\n=== Tugas Mandiri 1 ===")
+
+    val Math = mathHelper()
+
+    println("Luas Persegi: ${Math.hitungLuas(10)}")
+    println("Luas Persegi Panjang: ${Math.hitungLuas(10, 5)}")
+    println("Luas Lingkaran: ${Math.hitungLuas(7.0)}")
 }
