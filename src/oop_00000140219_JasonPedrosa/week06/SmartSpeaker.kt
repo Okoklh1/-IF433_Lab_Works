@@ -1,6 +1,6 @@
 package oop_00000140219_JasonPedrosa.week06
 
-class SmartSpeaker(
+class smartSpeaker(
     override val id: String,
     override val name: String
 ) : SmartDevice, Switchable {
