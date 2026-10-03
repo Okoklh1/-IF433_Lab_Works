@@ -1,5 +1,5 @@
 package oop_00000140219_JasonPedrosa.week06
 
-interface PaymentMethod {
+interface paymentMethod {
     fun pay(amount: Double)
 }
