@@ -36,4 +36,8 @@ fun main() {
         ApiResponse.Loading -> "Tampilkan Spinner"
     }
     println(uiMessage)
+
+    println("=== SIMULASI GAME MANAGER (SINGLETON) ===")
+    gameManager.startGame()
+    gameManager.startGame()
 }
