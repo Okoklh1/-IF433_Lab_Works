@@ -23,6 +23,7 @@ fun main() {
         .map { it.pair }
         .toSet()
 
+    println("=== CRYPTO TRADING DASHBOARD ===")
     println("Closed Trades: $closedTrades")
     println("Winning Trades: $winningTrades")
     println("Losing Trades: $losingTrades")
