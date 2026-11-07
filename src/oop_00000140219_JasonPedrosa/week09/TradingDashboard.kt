@@ -24,12 +24,8 @@ fun main() {
         .toSet()
 
     println("=== CRYPTO TRADING DASHBOARD ===")
-    println("Closed Trades: $closedTrades")
-    println("Winning Trades: $winningTrades")
-    println("Losing Trades: $losingTrades")
-    println("\nTop Performers:")
     topPerformersString.forEach { println(it) }
-    println("\nWorst Performers:")
     worstPerformersString.forEach { println(it) }
+
     println("\nUnique Traded Pairs: $uniquePairs")
 }
