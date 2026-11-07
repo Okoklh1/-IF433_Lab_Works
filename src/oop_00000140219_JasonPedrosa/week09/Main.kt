@@ -22,4 +22,5 @@ fun main() {
     inventory["Oranges"] = 20 // Menambah data baru[cite: 2]
     inventory["Apples"] = 45 // Mengupdate data lama[cite: 2]
     println("Inventory: $inventory")
+
 }
