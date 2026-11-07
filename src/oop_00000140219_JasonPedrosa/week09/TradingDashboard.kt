@@ -12,7 +12,9 @@ fun main() {
 
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
     val winningTrades = closedTrades.filter { it.roe > 0 }
+    val losingTrades = closedTrades.filter { it.roe <= 0 }
 
     println("Closed Trades: $closedTrades")
     println("Winning Trades: $winningTrades")
+    println("Losing Trades: $losingTrades")
 }
