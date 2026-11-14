@@ -1,9 +1,9 @@
 package oop_00000140219_JasonPedrosa.week10
 
 data class Coin(
-    val name: String,
+    override val name: String,
     val balance: Double
-)
+) : Named
 
 data class Transaction(
     val id: String,

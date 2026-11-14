@@ -4,11 +4,6 @@ interface Named {
     val name: String
 }
 
-data class Coin(
-    override val name: String,
-    val balance: Double
-) : Named
-
 class WalletRepository<T : Named> {
     private val items = mutableListOf<T>()
 
