@@ -8,4 +8,7 @@ data class Coin(
 data class Transaction(
     val id: String,
     val amount: Double
-)
+) : Named {
+    override val name: String
+        get() = id
+}
