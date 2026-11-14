@@ -7,9 +7,7 @@ fun main() {
     coinRepo.add(Coin("ETH", 2.0))
     coinRepo.add(Coin("USDT", 100.0))
 
-    println("All Coins:")
-    println(coinRepo.getAll())
+    val response = ApiResponse("200 OK", coinRepo.getAll())
 
-    println("Search Result:")
-    println(coinRepo.searchByName("Bitcoin"))
+    println(response)
 }
